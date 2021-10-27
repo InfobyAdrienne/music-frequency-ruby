@@ -38,4 +38,9 @@ describe Music do
     expect{ music.adjust(1) }.to raise_error "Sound waves are not parsed correctly"
   end 
 
+  # testing if one frequency can be tested within 100ms 
+  it 'should process a full second of music within 100ms' do   
+      expect{ music.adjust([30]) }.to perform_under(0.1)
+  end
+
 end 

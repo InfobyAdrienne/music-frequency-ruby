@@ -6,7 +6,7 @@ def adjust(input, upper_limit = UPPER_LIMIT_DEFAULT, lower_limit = LOWER_LIMIT_D
   unless input.is_a?(Array)
     raise "Sound waves are not parsed correctly"
   end 
-  
+
   output = input.map do |x| 
     raise "Sound waves are not parsed correctly" if (x < 1)
   if x > upper_limit
@@ -19,5 +19,10 @@ def adjust(input, upper_limit = UPPER_LIMIT_DEFAULT, lower_limit = LOWER_LIMIT_D
 end
   return output 
 end 
+
+  # start = Time.now
+  # finish = Time.now
+  # diff = finish - start
+  # p diff 
 
 end
