@@ -32,7 +32,8 @@ The [10] and [1500] have both been adjusted according to the default limits
 
 - Raise the error "Sound waves are not parsed correctly" if the soundwave is not modeled as an array, if any of the frequencies entered are below 1
 
-- This program needs to be run on streamed music, so it should process a full second of music (44,100 frequencies) in under 100ms.
+- This program needs to be run on streamed music, so it should process a full second of music (44,100 frequencies) in under 100ms
 
 #### Comments 
-- I installed the 'rspec-benchmark' in order to be able to do the performace timings
+
+- I installed the 'rspec-benchmark' in order to be able to do the performace timings. At the moment it processing 44,100 frequencies in under 100ms is not possible

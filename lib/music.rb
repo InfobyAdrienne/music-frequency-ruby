@@ -1,3 +1,5 @@
+require 'benchmark'
+
 class Music
 UPPER_LIMIT_DEFAULT = 1000
 LOWER_LIMIT_DEFAULT = 40
@@ -20,9 +22,14 @@ end
   return output 
 end 
 
-  # start = Time.now
-  # finish = Time.now
-  # diff = finish - start
-  # p diff 
+def running_time
+  time = Benchmark.measure {
+    44100.times do 
+      Music.new.adjust([30])
+    end 
+  }
+  puts time.real
+ end
+# at the moment the code doesn't perform in less than 100ms
 
 end
