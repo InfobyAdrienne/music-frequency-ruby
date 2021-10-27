@@ -36,4 +36,4 @@ The [10] and [1500] have both been adjusted according to the default limits
 
 #### Comments 
 
-- I installed the 'rspec-benchmark' in order to be able to do the performace timings. At the moment it processing 44,100 frequencies in under 100ms is not possible
+- I installed the 'rspec-benchmark' in order to be able to do the performace timings. The final test shows that the program can perform in under 100ms with 44,100 frequencies. I also created a method 'running_time' so I could test this using irb. 

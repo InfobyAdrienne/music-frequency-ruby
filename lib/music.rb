@@ -19,7 +19,7 @@ def adjust(input, upper_limit = UPPER_LIMIT_DEFAULT, lower_limit = LOWER_LIMIT_D
     x
   end 
 end
-  return output 
+  return output
 end 
 
 def running_time
@@ -30,6 +30,6 @@ def running_time
   }
   puts time.real
  end
-# at the moment the code doesn't perform in less than 100ms
+# at the moment the code does perform in less than 100ms
 
 end
